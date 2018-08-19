@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: costs
+#
+#  id         :bigint(8)        not null, primary key
+#  category   :string
+#  item       :string
+#  mount      :integer
+#  price      :integer
+#  sum        :integer
+#  note       :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  item: MyString
+  mount: 1
+  price: 1
+  sum: 1
+  note: MyString
+
+two:
+  category: MyString
+  item: MyString
+  mount: 1
+  price: 1
+  sum: 1
+  note: MyString
