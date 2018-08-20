@@ -7,4 +7,26 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
+// import Vue from 'vue';
+// import Vuex from 'vuex';
+// import VueRouter from 'vue-router';
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css';
+// import store from '../store';
+// import router from '../routes';
+// import App from '../app';
+
+// import '../assets/css/application';
+
+// Vue.use(Vuex);
+// Vue.use(VueRouter);
+// Vue.use(ElementUI);
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   new Vue({
+//     el: '#application',
+//     store: new Vuex.Store(store),
+//     router,
+//     render: (h) => h(App),
+//   });
+// });
