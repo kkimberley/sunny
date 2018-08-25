@@ -14,4 +14,5 @@
 #
 
 class Cost < ApplicationRecord
+  has_many :items
 end

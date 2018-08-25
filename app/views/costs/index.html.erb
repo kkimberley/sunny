@@ -1,0 +1,35 @@
+<div class="page">
+  <div class="page-header">
+    <h1 class="page-title">費用總表</div>
+    <div class="page-header-actions-right">
+      <%= simple_form_for @cost, html: { autocomplete: 'nope', novalidate: false } do |f| %>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <%= f.input :category, label: '種類', required: true %>
+            </div>
+          <div class="modal-footer">
+            <%= f.button :submit, class: 'btn btn-success btn-outline' %>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="panel">
+      <div class="panael-body container-fluid">
+        <div class="example-wrap">
+          <div class="example table-responsive">
+            <% @costs.each do |cost| %>
+              <div>
+                <%= link_to cost.category, item_path(cost), class: 'btn' %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>

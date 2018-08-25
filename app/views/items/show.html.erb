@@ -1,0 +1,50 @@
+<%= simple_form_for @item, html: { autocomplete: 'nope', novalidate: false } do |f| %>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-6">
+        <%= f.hidden_field :cost_id, required: true, value: @cost.id %>
+      </div>
+
+      <div class="col-md-6">
+        <%= f.input :name, required: true %>
+      </div>
+
+      <div class="col-md-6">
+        <%= f.input :mount %>
+      </div>
+
+      <div class="col-md-12">
+        <%= f.input :price %>
+      </div>
+
+      <div class="col-md-12">
+        <%= f.input :note %>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+       <%= f.button :submit, class: 'btn btn-success btn-outline' %>
+    </div>
+  </div>
+<% end %>
+<table>
+  <thead>
+    <td>名稱</td>
+    <td>數量</td>
+    <td>單價</td>
+    <td>小計</td>
+    <td>備註</td>
+  </thead>
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.mount %></td>
+        <td><%= item.price %></td>
+        <td><%= item.sum %></td>
+        <td><%= item.note %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+合計: <%= @summary %>
