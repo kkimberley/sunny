@@ -2,18 +2,27 @@ class CostsController < ApplicationController
 
   def index
     @costs = costs
-    @cost = Cost.new
+
+    respond_to do |format|
+      format.html { render :index }
+      format.json { render :json => @costs.to_json(only: [:id, :category]) }
+    end
   end
 
   def new
+    @cost = Cost.new
   end
 
   def create
     cost = costs.new(cost_params)
-    if cost.save
-      redirect_to_ok
-    else
-      redirect_to_ng
+
+    respond_to do |format|
+      if cost.save
+        format.html { redirect_to_ok }
+        format.json { render :json => @costs.to_json(only: [:id, :category]) }
+      else
+        redirect_to_ng
+      end
     end
   end
 

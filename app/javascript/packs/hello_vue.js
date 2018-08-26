@@ -38,25 +38,38 @@
 // </div>
 
 
-import Vue from 'vue/dist/vue.esm'
-import App from '../app.vue'
-import Main from './main.vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
-import 'normalize.css'
+// import Vue from 'vue/dist/vue.esm';
+// import axios from 'axios';
+// import VueAxios from 'vue-axios'
+// import App from '../app.vue';
+// import SiteHeader from './components/SiteHeader';
+// import VueForm from './components/VueForm';
+// import List from './components/List';
+// import Costs from './views/Costs';
+// import ElementUI from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
+// import './styles/application.scss';
 
-Vue.use(ElementUI);
-Vue.component('mainLayout', Main)
+// Vue.use(ElementUI);
+// Vue.use(VueAxios, axios);
+// Vue.component('VueForm', VueForm)
+// Vue.component('List', List)
 
-document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    el: '#hello',
-    data: {
-      message: "Can you say hello?"
-    },
-    components: { App }
-  })
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   let token = document.getElementsByName('csrf-token')[0].getAttribute('content');
+
+//   axios.defaults.headers.common['X-CSRF-Token'] = token;
+//   axios.defaults.headers.common['Accept'] = 'application/json';
+
+//   const app = new Vue({
+//     el: '#hello',
+//     data: {
+//       token,
+//     },
+//     axios,
+//     components: { App, SiteHeader, VueForm, List, Costs }
+//   })
+// })
 //
 //
 //
