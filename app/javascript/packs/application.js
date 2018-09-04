@@ -14,6 +14,7 @@ import SiteHeader from './components/SiteHeader';
 import VueForm from './components/VueForm';
 import List from './components/List';
 import Costs from './views/Costs';
+import Items from './views/Items';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import './styles/application.scss';
@@ -35,6 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
       token,
     },
     axios,
-    components: { SiteHeader, VueForm, List, Costs }
+    components: { SiteHeader, VueForm, List, Costs, Items }
   })
 })

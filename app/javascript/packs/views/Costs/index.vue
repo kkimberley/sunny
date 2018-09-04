@@ -1,6 +1,14 @@
 <template>
   <section class="costs-container">
-    <vue-form :render-fields="['category']" v-on:costs-change="updateCostList"></vue-form>
+    <vue-form
+      :render-fields="[{
+        value: 'category',
+        isHide: false,
+      }]"
+      :inline="true"
+      formName="costs"
+      v-on:costs-change="updateCostList"
+    ></vue-form>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
         <h2 class="costs-title">費用總表</h2>
@@ -14,6 +22,7 @@
   export default {
     mounted () {
       this.getCostList()
+      console.log('in costs')
     },
     data() {
       return {
