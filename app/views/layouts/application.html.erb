@@ -7,15 +7,18 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'hello_vue' %>
-    <%= stylesheet_pack_tag 'hello_vue' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application' %>
   </head>
 
   <body>
     <div id="hello">
-      <app></app>
-      <%= yield %>
+      <el-container direction="vertical">
+        <site-header cost-path="<%= costs_path %>" current-path="<%= request.path %>"></site-header>
+        <el-main>
+          <%= yield %>
+        </el-main>
+      </el-container>
     </div>
-
   </body>
 </html>
