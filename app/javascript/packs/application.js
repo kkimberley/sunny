@@ -16,10 +16,12 @@ import List from './components/List';
 import Costs from './views/Costs';
 import Items from './views/Items';
 import ElementUI from 'element-ui';
+import VCharts from 'v-charts';
 import 'element-ui/lib/theme-chalk/index.css';
 import './styles/application.scss';
 
 Vue.use(ElementUI);
+Vue.use(VCharts)
 Vue.use(VueAxios, axios);
 Vue.component('VueForm', VueForm)
 Vue.component('List', List)

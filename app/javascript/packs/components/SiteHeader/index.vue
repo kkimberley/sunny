@@ -21,6 +21,11 @@ export default {
 
   .el-menu-item {
     color: white;
+
+    &:first-child{
+      padding-left: 0;
+    }
+
     &:not(.is-disabled):hover {
       background: rgba(#fff, 0.3);
       color: white;
@@ -31,6 +36,6 @@ export default {
     }
   }
 
-  border-color: white;
+  border-color: transparent;
 }
 </style>
