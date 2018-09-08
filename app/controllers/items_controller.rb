@@ -30,6 +30,17 @@ class ItemsController < ApplicationController
     end
   end
 
+  def destroy
+    ids = params[:item][:ids]
+    items = Item.where(id: ids)
+
+    if items.destroy_all
+      render json: { status: 'success', code: 200, message: 'Destroy successfully.'}
+    else
+      render json: { status: 'fail', code: 400, message: 'Destroy fail.'}
+    end
+  end
+
   private
 
   def item_params
