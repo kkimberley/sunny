@@ -33,7 +33,12 @@
         :data="items"
         show-summary
         sum-text="合計"
+        @selection-change="handleSelection"
       >
+        <el-table-column
+          type="selection"
+          width="55">
+        </el-table-column>
         <el-table-column
           label="名稱"
           prop="name"
@@ -105,6 +110,13 @@ export default {
     },
     handleTabClick (tab, event) {
       console.warn(tab, event);
+    },
+    handleSelection (val) {
+      const arr = val.map((item) => {
+        return item.id
+      });
+      console.warn('val', val);
+      console.warn('arr', arr);
     }
   }
 }
