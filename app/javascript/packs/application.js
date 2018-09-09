@@ -13,6 +13,8 @@ import VueAxios from 'vue-axios'
 import SiteHeader from './components/SiteHeader';
 import VueForm from './components/VueForm';
 import List from './components/List';
+import Card from './components/Card';
+import Dashboard from './views/Dashboard';
 import Costs from './views/Costs';
 import Items from './views/Items';
 import ElementUI from 'element-ui';
@@ -25,6 +27,8 @@ Vue.use(VCharts)
 Vue.use(VueAxios, axios);
 Vue.component('VueForm', VueForm)
 Vue.component('List', List)
+Vue.component('Card', Card)
+Vue.component('SiteHeader', SiteHeader)
 
 document.addEventListener('DOMContentLoaded', () => {
   let token = document.getElementsByName('csrf-token')[0].getAttribute('content');
@@ -38,6 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
       token,
     },
     axios,
-    components: { SiteHeader, VueForm, List, Costs, Items }
+    components: { Costs, Items, Dashboard }
   })
 })
