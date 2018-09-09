@@ -1,7 +1,7 @@
 @import "normalize.css";
 
 body {
-  background-image: linear-gradient(to bottom, #f48fb1, #d81b60);
+  background-image: linear-gradient(to top left, #f48fb1, #d81b60);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
@@ -15,6 +15,16 @@ h2 {
   font-size: 18px;
 }
 
-h2 {
+h3 {
   font-size: 16px;
+  font-weight: 400;
+}
+
+.el-card {
+  border: 0;
+}
+
+.el-card__header {
+  color: white;
+  background-image: linear-gradient(125deg, #5494FA, #8CD2FB);
 }
