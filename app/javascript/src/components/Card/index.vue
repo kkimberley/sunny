@@ -18,28 +18,3 @@ export default {
   props: ['cardTitle', 'cardContent','buttonTxt']
 }
 </script>
-
-
-<style lang="scss" scoped>
-  .dashboard-card_title {
-    margin: 0;
-  }
-  .dashboard-card_content {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-
-    li {
-      position: relative;
-      line-height: 2em;
-
-      & + li {
-        margin-top: 16px;
-      }
-    }
-  }
-  .dashboard-card_item_btn{
-    float: right;
-    padding: 8px 24px;
-  }
-</style>

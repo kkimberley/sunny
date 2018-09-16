@@ -42,13 +42,3 @@
     }
   }
 </script>
-
-<style lang="scss" scoped>
-  .costs-container {
-    padding: 0 20px;
-  }
-
-  .costs-title {
-    margin: 0;
-  }
-</style>

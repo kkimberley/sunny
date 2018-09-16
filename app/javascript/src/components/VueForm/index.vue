@@ -74,9 +74,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-  .vue-form__fields {
-    display: inline-block;
-  }
-</style>

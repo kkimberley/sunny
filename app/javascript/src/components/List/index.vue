@@ -15,21 +15,3 @@ export default {
   props: ['items'],
 }
 </script>
-
-<style lang="scss" scoped>
-  .text {
-    font-size: 14px;
-    color: #222;
-  }
-
-  .item {
-    margin-bottom: 18px;
-    a {
-      text-decoration: none;
-    }
-  }
-
-  .el-tag {
-    margin-right: 10px;
-  }
-</style>

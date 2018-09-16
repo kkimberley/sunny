@@ -80,14 +80,3 @@
     }
   }
 </script>
-
-<style lang="scss" scoped>
-  .dashboard-chart {
-    margin-top: 24px;
-    background-color: white;
-    padding-top: 48px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-</style>

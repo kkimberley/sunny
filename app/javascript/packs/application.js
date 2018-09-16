@@ -10,17 +10,17 @@
 import Vue from 'vue/dist/vue.esm';
 import axios from 'axios';
 import VueAxios from 'vue-axios'
-import SiteHeader from './components/SiteHeader';
-import VueForm from './components/VueForm';
-import List from './components/List';
-import Card from './components/Card';
-import Dashboard from './views/Dashboard';
-import Costs from './views/Costs';
-import Items from './views/Items';
+import SiteHeader from '../src/components/SiteHeader';
+import VueForm from '../src/components/VueForm';
+import List from '../src/components/List';
+import Card from '../src/components/Card';
+import Dashboard from '../src/views/Dashboard';
+import Costs from '../src/views/Costs';
+import Items from '../src/views/Items';
 import ElementUI from 'element-ui';
 import VCharts from 'v-charts';
 import 'element-ui/lib/theme-chalk/index.css';
-import './styles/application.scss';
+import '../src/application.scss';
 
 Vue.use(ElementUI);
 Vue.use(VCharts)
