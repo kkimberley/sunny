@@ -19,6 +19,9 @@
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      <% if user_signed_in? %>
+        <%= link_to 'Logout', destroy_user_session_path, class: 'btn btn-raised btn-primary my-2 my-sm-0', method: :delete %>
+      <% end %>
     </form>
   </div>
 </nav>
